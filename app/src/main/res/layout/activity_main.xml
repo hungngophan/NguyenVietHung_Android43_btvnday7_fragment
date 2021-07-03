@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+
+        android:background="@drawable/duongvien"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create New Note"
+                android:textSize="30dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+
+                />
+            <TextView
+                android:id="@+id/tvsave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text="SAVE"
+                android:textColor="@color/black"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="15dp"
+                />
+            <Button
+                android:id="@+id/btnsave"
+                android:layout_width="10dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+    <EditText
+
+        android:background="@drawable/duongvien1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        />
+    <EditText
+        android:background="@drawable/duongvien1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textColor="@color/black"
+        android:text="Description"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Remind me at:"
+        android:textSize="17dp"
+        android:layout_margin="10dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+        <TextView
+            android:id="@+id/tvtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="   14:20"
+            android:textSize="35dp"
+            />
+        <TextView
+            android:id="@+id/tvdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="04/03/2016"
+            android:textSize="35dp"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp">
+        <TextView
+            android:textSize="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Type:"
+
+            />
+        <Spinner
+
+            android:background="@drawable/spinner"
+            android:id="@+id/spinner"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Tags:"
+            />
+        <TextView
+            android:id="@+id/tvtags"
+            android:textSize="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   Android,VTC,FPT,Game"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Weeks:"
+            />
+        <TextView
+            android:id="@+id/tvweeks"
+            android:textSize="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mon,Thur,Sat"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+<Button
+    android:id="@+id/btntune"
+    android:layout_margin="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="TUNE "
+    />
+        <FrameLayout
+            android:id="@+id/fragment_btn_tune"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true" >
+        </FrameLayout>
+
+    </LinearLayout>
+</layout>
